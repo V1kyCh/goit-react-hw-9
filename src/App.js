@@ -21,6 +21,11 @@ class App extends Component {
   }
 
   addContact = (name, num) => {
+    console.log(this.state.contacts.some(contact => contact.name === name))
+    if (this.state.contacts.some(contact => contact.name === name)) {
+      alert('Це імʼя вже додано')
+      return
+    }
     const newContact = {
       name: name,
       number: num,
