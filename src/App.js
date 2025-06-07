@@ -11,7 +11,7 @@ const hexId = customAlphabet('0123456789abcdef', 6);
 class App extends Component {
   state = {
     contacts: [],
-    filter: '',
+    filter: ''
   }
 
   componentDidMount() {
