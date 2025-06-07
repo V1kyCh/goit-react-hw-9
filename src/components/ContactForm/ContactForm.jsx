@@ -24,8 +24,8 @@ export class ContactForm extends Component {
                             type="text"
                             name="name"
                             id="name-input"
-                            // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                            // title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+                            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                             required
                             value={this.state.name}
                             placeholder=" " 
@@ -42,8 +42,8 @@ export class ContactForm extends Component {
                             type="tel"
                             name="number"
                             id="num-input"
-                            // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                            // title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+                            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+                            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                             value={this.state.number}
                             required
                             placeholder=" " 
