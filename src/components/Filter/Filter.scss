@@ -1,0 +1,68 @@
+.input-wrapper {
+  position: relative;
+  width: 280px;
+  height: 48px;
+  margin: 0 auto 40px auto;
+  display: block;
+}
+
+.styled-input {
+  width: 100%;
+  height: 100%;
+  padding: 16px 12px 0 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #dbd0ff;
+  background: #f8f1ff;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.2s ease;
+  font-family: "Meta", sans-serif;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.styled-input:focus {
+  outline: none;
+  border-color: #6a00ff;
+  background: #f9f1ff;
+}
+
+.input-label {
+  position: absolute;
+  left: 12px;
+  top: 18px;
+  font-size: 16px;
+  color: #8871b2a4;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  font-family: "Meta", sans-serif;
+  user-select: none;
+}
+
+.styled-input:focus + .input-label,
+.styled-input:not(:placeholder-shown) + .input-label {
+  top: 4px;
+  font-size: 12px;
+  color: #6600ff;
+  font-weight: 600;
+}
+
+.find-contacts-title {
+  font-family: "Meta", sans-serif;
+  font-variation-settings: "wght" 700, "ital" 0;
+  font-size: 32px;
+  text-align: center;
+  color: #4a00ff;
+  -webkit-text-stroke: 0; 
+  text-shadow:
+    1px 1px 3px rgba(74, 0, 255, 0.3);
+  margin: 20px 0 30px 0;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.find-contacts-title:hover {
+  color: #6a00ff;
+  text-shadow:
+    2px 2px 5px rgba(106, 0, 255, 0.6);
+}
